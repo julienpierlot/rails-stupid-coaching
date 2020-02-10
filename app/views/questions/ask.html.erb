@@ -1,0 +1,6 @@
+<p>Ask your coach anything</p>
+<%= form_with url: answer_path, local: true, method: 'GET' do |form| %>
+  <%= form.label :question%>
+  <%= form.text_field :question%>
+  <%= form.submit 'Ask' %>
+<% end %>

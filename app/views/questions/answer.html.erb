@@ -1,0 +1,6 @@
+<% if @question %>
+  <p class="message">Your question: <%= @question %> <p>
+  <p class="message">Coach answer: <%= @answer %></p>
+<% end %>
+
+<%= link_to 'Ask a new question', ask_path, class: 'btn' %>
